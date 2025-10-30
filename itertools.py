@@ -26,11 +26,17 @@ val =['as','i am' ,'lool']
 # 140
 # 160
 # '''
-val=[10,20,30,40,50,60,70,80,90,100]
-a=itertools.accumulate(val)
+
+val=[10,20,30,1000,40,50,60,70,80,90,100]
+a=itertools.accumulate(val,max)
 print(list(a))
+
 
 '''
 PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> py .\itertools.py
-[10, 30, 60, 100, 150, 210, 280, 360, 450, 550]
+[10, 20, 30, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
 '''
+# '''
+# PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> py .\itertools.py
+# [10, 30, 60, 100, 150, 210, 280, 360, 450, 550]
+# '''
