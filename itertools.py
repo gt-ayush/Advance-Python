@@ -45,8 +45,18 @@ pay=[100,200,300,400,500]
 update= lambda balsnces,pay : round(balsnces*1.04)-pay
 balsnces= itertools.accumulate(pay, update,initial=2000)
 print(list(balsnces))
-
-'''
+r"""
 PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> py .\itertools.py
 [2000, 1980, 1859, 1633, 1298, 850]
+"""
+
+r'''
+PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> py .\itertools.py
+  File "C:\Users\Ayush Kumar Gupta\Desktop\Advance Python\itertools.py", line 48
+    """
+    ^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 6-7: truncated \UXXXXXXXX escape
+PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> py .\itertools.py
+[2000, 1980, 1859, 1633, 1298, 850]
+PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> 
 '''
