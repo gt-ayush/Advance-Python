@@ -14,15 +14,23 @@ val =['as','i am' ,'lool']
 # lool
 # '''
 
-x= itertools.count(100,20)
-print(next(x))
-print(next(x))
-print(next(x))
-print(next(x))
+# x= itertools.count(100,20)
+# print(next(x))
+# print(next(x))
+# print(next(x))
+# print(next(x))
+# '''
+# PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> py .\itertools.py   
+# 100
+# 120
+# 140
+# 160
+# '''
+val=[10,20,30,40,50,60,70,80,90,100]
+a=itertools.accumulate(val)
+print(list(a))
+
 '''
-PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> py .\itertools.py   
-100
-120
-140
-160
+PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> py .\itertools.py
+[10, 30, 60, 100, 150, 210, 280, 360, 450, 550]
 '''
