@@ -16,5 +16,21 @@ for i , d in enumerate(zip(days,mon),start=1):
 
 r=itertools.zip_longest(days,mon,fillvalue="-")
 
-for i in r:
-    print(i)
+# for i in r:
+#     print(i)
+
+print(r)
+
+'''
+PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> py '.\More iterators.py'
+1 sun = jan in -------
+2 mon = feb in -------
+3 tue = mar in -------
+4 wed = apr in -------
+5 thu = may in -------
+6 fri = jun in -------
+7 sat = jul in -------
+<itertools.zip_longest object at 0x000001EFE9AE0F40>
+
+### this is giving an error. if i directly print (r)
+'''
