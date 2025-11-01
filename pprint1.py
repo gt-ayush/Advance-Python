@@ -63,4 +63,51 @@ print(f"The reigning champion from {worldcup_data['current_champion']['year']} i
 
 
 pprint.pprint(worldcup_data)
+
+r"""
+PS C:\Users\Ayush Kumar Gupta\Desktop\Advance Python> & "C:/Users/Ayush Kumar Gupta/AppData/Local/Programs/Python/Python314/python.exe" "c:/Users/Ayush Kumar Gupta/Desktop/Advance Python/pprint1.py"
+The host countries for the next World Cup in 2026 are: United States 🇺🇸, Canada 🇨🇦, Mexico     🇲🇽
+The reigning champion from 2022 is Argentina 🇦🇷.
+{'current_champion': {'final_score': '3-3 (4-2 on penalties)',
+                      'golden_boot': 'Kylian Mbappé (8 goals)',
+                      'host_country': 'Qatar 🇶🇦',
+                      'runner_up': 'France 🇫🇷',
+                      'teams_participating': 32,
+                      'winner': 'Argentina 🇦🇷',
+                      'year': 2022},
+ 'historical_data': {'continental_titles': {'Europe': 12, 'South America': 10},
+                     'most_titles': 'Brazil (5)'},
+ 'next_tournament': {'dates': 'June 11 – July 19, 2026',
+                     'host_countries': ['United States 🇺🇸',
+                                        'Canada 🇨🇦',
+                                        'Mexico 🇲🇽'],
+ 'historical_data': {'continental_titles': {'Europe': 12, 'South America': 10},
+                     'most_titles': 'Brazil (5)'},
+ 'next_tournament': {'dates': 'June 11 – July 19, 2026',
+                     'host_countries': ['United States 🇺🇸',
+                                        'Canada 🇨🇦',
+ 'historical_data': {'continental_titles': {'Europe': 12, 'South America': 10},
+                     'most_titles': 'Brazil (5)'},
+ 'next_tournament': {'dates': 'June 11 – July 19, 2026',
+                     'host_countries': ['United States 🇺🇸',
+ 'historical_data': {'continental_titles': {'Europe': 12, 'South America': 10},
+                     'most_titles': 'Brazil (5)'},
+ 'historical_data': {'continental_titles': {'Europe': 12, 'South America': 10},
+ 'historical_data': {'continental_titles': {'Europe': 12, 'South America': 10},
+                     'most_titles': 'Brazil (5)'},
+ 'historical_data': {'continental_titles': {'Europe': 12, 'South America': 10},
+ 'historical_data': {'continental_titles': {'Europe': 12, 'South America': 10},
+                     'most_titles': 'Brazil (5)'},
+ 'next_tournament': {'dates': 'June 11 – July 19, 2026',
+                     'host_countries': ['United States 🇺🇸',
+                                        'Canada 🇨🇦',
+                                        'Mexico 🇲🇽'],
+                     'key_venues': {'Final Match': 'MetLife Stadium, New '
+                                                   'York/New Jersey',
+                                    'Opening Match': 'Estadio Azteca, Mexico '
+                                                     'City'},
+                     'teams_participating': 48,
+                     'total_matches': 104,
+                     'year': 2026}}
+"""
 exit()
