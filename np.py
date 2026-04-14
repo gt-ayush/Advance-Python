@@ -1,5 +1,9 @@
 import numpy as np
 
+
+
+
+
 a = [1, 2, 3, 4, 5]
 b = [6, 7, 8, 9, 10]
 
@@ -60,3 +64,56 @@ print("Week 1 precipitation is zero:", week_one_prcp == 0)
 print("Type of the boolean array:", type(week_one_prcp == 0))
 
 print("Week 1 TMIN less than -10°C:", week_one_tmin < -10)
+
+week_one_tmax_list_mean = sum(week_one_tmax) / len(week_one_tmax)
+print("Average TMAX in Week 1:", week_one_tmax_list_mean)
+
+week_one_tmax_mean = np.mean(week_one_tmax)
+print("Average TMAX in Week 1:", week_one_tmax_mean)
+
+
+
+def mean_range(tmin_list, tmax_list):
+    assert len(tmin_list) == len(tmax_list) # Return an error if the lengths of the lists are not the same
+    
+    trange_list = []
+    for tmin, tmax in zip(tmin_list, tmax_list):
+        trange = tmax - tmin
+        trange_list.append(trange)
+
+    return sum(trange_list) / len(trange_list)
+
+week_one_trange_list_mean = mean_range(week_one_tmin, week_one_tmax)
+print("Average range of temperature in Week 1:", week_one_trange_list_mean)
+
+
+print("Average range of temperature in Week 1:", np.mean(week_one_tmax - week_one_tmin))
+
+
+import time
+
+# Create a large Python list and a Numpy array
+size = 10**6
+python_list = list(range(size))
+numpy_array = np.arange(size)
+
+# Time the summation for Python list
+start = time.time()
+list_sum = sum(python_list)
+end = time.time()
+print("Python List Summation Time:", end - start)
+
+# Time the summation for Numpy array
+start = time.time()
+array_sum = np.sum(numpy_array)
+end = time.time()
+print("Numpy Array Summation Time:", end - start)
+
+week_one_tmax_list = week_one_tmax.tolist()
+week_two_tmax_list = week_two_tmax.tolist()
+
+week_one_two_tmax_list = week_one_tmax_list + week_two_tmax_list
+print("Combined Week 1 and Week 2 TMAX list:", week_one_two_tmax_list)
+
+week_one_two_tmax = np.concatenate((week_one_tmax, week_two_tmax))
+print("Combined Week 1 and Week 2 TMAX array:", week_one_two_tmax)
