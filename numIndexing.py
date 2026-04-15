@@ -16,3 +16,11 @@ jan_prcp = jan_prcp / 10
 print("January TMAX (in Celsius):", jan_tmax)
 print("January TMIN (in Celsius):", jan_tmin)
 print("January PRCP (in mm):", jan_prcp)
+
+print("First day of January TMAX:", jan_tmax[0])
+print("Last day of January TMAX:", jan_tmax[-1])
+print("Last day of January TMIN:", jan_tmin[-1])
+print("Last day of January PRCP:", jan_prcp[-1])
+
+print("January TMAX every week (in order):", jan_tmax[[0, 7, 14, 21, 28]])
+print("January TMAX every week (in random order):", jan_tmax[[7, 0, 14, 28, 21]])
