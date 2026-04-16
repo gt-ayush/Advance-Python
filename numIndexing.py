@@ -24,3 +24,22 @@ print("Last day of January PRCP:", jan_prcp[-1])
 
 print("January TMAX every week (in order):", jan_tmax[[0, 7, 14, 21, 28]])
 print("January TMAX every week (in random order):", jan_tmax[[7, 0, 14, 28, 21]])
+
+tmax_week1 = jan_tmax[0:7] # [:7] also works
+print("Average TMAX in Week 1:", np.mean(tmax_week1))
+
+prcp_fri = jan_prcp[0::7] # [::7] also works
+print("January PRCP on Fridays:", prcp_fri)
+
+no_rain = jan_prcp == 0
+print("TMAX on days with no rain (first 10):", jan_tmax[no_rain][:10])
+print("TMIN on days with no rain (first 10):", jan_tmin[no_rain][:10])
+
+# This will lead to wrong average
+print("Average January PRCP (including missing values):", np.mean(jan_prcp))
+
+jan_prcp_no_missing = jan_prcp[jan_prcp < 999.9]
+print("Average January PRCP (excluding missing values):", np.mean(jan_prcp_no_missing))
+
+cold_and_not_rainy = (jan_tmax < -10) & (jan_prcp == 0)
+print("Number of days in January that are cold and not rainy:", np.sum(cold_and_not_rainy))
