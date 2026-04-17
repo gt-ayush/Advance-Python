@@ -43,3 +43,11 @@ print("Average January PRCP (excluding missing values):", np.mean(jan_prcp_no_mi
 
 cold_and_not_rainy = (jan_tmax < -10) & (jan_prcp == 0)
 print("Number of days in January that are cold and not rainy:", np.sum(cold_and_not_rainy))
+
+X = raw / 10
+print(X[:5])
+
+print("Shape of X:", X.shape)
+print("Min of X:", np.min(X))
+
+print("Min along axis 0 (columns):", np.min(X, axis=0))
