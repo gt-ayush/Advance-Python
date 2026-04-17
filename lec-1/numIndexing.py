@@ -51,3 +51,4 @@ print("Shape of X:", X.shape)
 print("Min of X:", np.min(X))
 
 print("Min along axis 0 (columns):", np.min(X, axis=0))
+print("Min along axis 1 (rows):", np.min(X, axis=1))
