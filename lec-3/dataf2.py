@@ -25,3 +25,9 @@ col_use=['MAL_ID', 'Name', 'Type', 'Episodes', 'Members', 'Score']
 anime_data = anime_data[col_use]
 print(anime_data.head())
 print(anime_data[0:3])
+#loc
+print(anime_data.loc[0:3])
+print(anime_data.loc[0:3, ['Name', 'Type']])
+
+#iloc
+print(anime_data.iloc[0:3, 0:3])
